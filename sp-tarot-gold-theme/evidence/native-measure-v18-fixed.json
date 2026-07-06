@@ -1,0 +1,506 @@
+[
+  {
+    "day": "2026-07-07",
+    "cellClass": "month-day-cell today ng-star-inserted",
+    "evc": {
+      "clientH": 50,
+      "scrollH": 143,
+      "scrollTop": 0,
+      "pt": "4px",
+      "display": "block",
+      "maxH": "calc(100% - 35px)"
+    },
+    "rows": [
+      {
+        "wrapCls": "month-event TaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 4,
+          "h": 37.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled TaskPlannedForDay",
+          "inline": "grid-area: 109 / 10 / span 60; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 4,
+          "h": 37.6,
+          "host": {
+            "align": "flex-start",
+            "height": "37.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/1px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -9,
+            "h": 19.6,
+            "text": "OverG",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      },
+      {
+        "wrapCls": "month-event SplitTaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 47.6,
+          "h": 39.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled SplitTaskPlannedForDay is-beyond-budget split-start",
+          "inline": "grid-area: 169 / 10 / span 36; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 47.6,
+          "h": 39.6,
+          "host": {
+            "align": "flex-start",
+            "height": "39.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/3px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -11,
+            "h": 19.6,
+            "text": "ClipB",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      },
+      {
+        "wrapCls": "month-event TaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 93.2,
+          "h": 39.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled TaskPlannedForDay is-beyond-budget",
+          "inline": "--title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 93.2,
+          "h": 39.6,
+          "host": {
+            "align": "flex-start",
+            "height": "39.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/3px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -11,
+            "h": 19.6,
+            "text": "ClipA",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "day": "2026-07-08",
+    "cellClass": "month-day-cell ng-star-inserted",
+    "evc": {
+      "clientH": 53,
+      "scrollH": 130,
+      "scrollTop": 0,
+      "pt": "4px",
+      "display": "block",
+      "maxH": "calc(100% - 35px)"
+    },
+    "rows": [
+      {
+        "wrapCls": "month-event TaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 4,
+          "h": 28.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled TaskPlannedForDay very-short-event",
+          "inline": "grid-area: 109 / 11 / span 2; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 4,
+          "h": 28.6,
+          "host": {
+            "align": "center",
+            "height": "28.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/1px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 22.6,
+            "pt": "1px",
+            "pb": "2px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 4,
+            "relBottom": -5,
+            "h": 19.6,
+            "text": "ShortD",
+            "display": "block",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "nowrap"
+          }
+        }
+      },
+      {
+        "wrapCls": "month-event TaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 38.6,
+          "h": 37.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled TaskPlannedForDay",
+          "inline": "grid-area: 111 / 11 / span 36; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 38.6,
+          "h": 37.6,
+          "host": {
+            "align": "flex-start",
+            "height": "37.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/1px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -9,
+            "h": 19.6,
+            "text": "ClipC",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      },
+      {
+        "wrapCls": "month-event ScheduledTask ng-star-inserted",
+        "wrap": {
+          "y": 82.2,
+          "h": 37.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled ScheduledTask",
+          "inline": "grid-area: 169 / 11 / span 12; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 82.2,
+          "h": 37.6,
+          "host": {
+            "align": "flex-start",
+            "height": "37.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/1px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -9,
+            "h": 19.6,
+            "text": "TimedF",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "day": "2026-07-11",
+    "cellClass": "month-day-cell ng-star-inserted",
+    "evc": {
+      "clientH": 53,
+      "scrollH": 53,
+      "scrollTop": 0,
+      "pt": "4px",
+      "display": "block",
+      "maxH": "calc(100% - 35px)"
+    },
+    "rows": [
+      {
+        "wrapCls": "month-event TaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 4,
+          "h": 37.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled TaskPlannedForDay",
+          "inline": "grid-area: 109 / 14 / span 36; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 4,
+          "h": 37.6,
+          "host": {
+            "align": "flex-start",
+            "height": "37.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/1px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -9,
+            "h": 19.6,
+            "text": "ClipE",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "day": "2026-07-19",
+    "cellClass": "month-day-cell ng-star-inserted",
+    "evc": {
+      "clientH": 53,
+      "scrollH": 53,
+      "scrollTop": 0,
+      "pt": "4px",
+      "display": "block",
+      "maxH": "calc(100% - 35px)"
+    },
+    "rows": [
+      {
+        "wrapCls": "month-event TaskPlannedForDay ng-star-inserted",
+        "wrap": {
+          "y": 4,
+          "h": 37.6,
+          "display": "block",
+          "mb": "1px",
+          "order": ""
+        },
+        "ev": {
+          "cls": "cdk-drag month-schedule-event cdk-drag-disabled TaskPlannedForDay",
+          "inline": "grid-area: 109 / 22 / span 24; --title-line-clamp: 1; --project-color: rgb(144, 187, 165);",
+          "clamp": "1",
+          "y": 4,
+          "h": 37.6,
+          "host": {
+            "align": "flex-start",
+            "height": "37.5938px",
+            "minH": "20px",
+            "m": "0px 10px 6px 4px",
+            "p": "2px 4px",
+            "b": "1px/1px",
+            "tf": "none",
+            "pos": "relative",
+            "top": "0px",
+            "ov": "visible",
+            "lh": "11px",
+            "fs": "11px",
+            "box": "border-box"
+          },
+          "title": {
+            "relTop": 3,
+            "h": 31.6,
+            "pt": "6px",
+            "pb": "6px",
+            "lh": "19.6px",
+            "fs": "14px",
+            "mh": "100%",
+            "pos": "static",
+            "tf": "none",
+            "als": "auto",
+            "ws": "nowrap"
+          },
+          "titleText": {
+            "relTop": 9,
+            "relBottom": -9,
+            "h": 19.6,
+            "text": "LateH",
+            "display": "flow-root",
+            "clampUsed": "1",
+            "mh": "19.6px",
+            "lh": "19.6px",
+            "ws": "normal"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "tarot-gold-theme",
+  "name": "Tarot Gold Theme",
+  "version": "1.8.0",
+  "description": "Tarot gold/black liner theme: starfield glass, gold foil, compact month-view strips. Pure CSS injection, no data access.",
+  "manifestVersion": 1,
+  "minSupVersion": "14.0.0",
+  "author": "custom",
+  "icon": "icon.svg"
+}
