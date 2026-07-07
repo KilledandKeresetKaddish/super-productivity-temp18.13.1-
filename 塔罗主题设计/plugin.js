@@ -1,5 +1,5 @@
 /* ============================================================
- * Tarot Gold Theme v1.8 for Super Productivity
+ * Tarot Gold Theme v1.9 for Super Productivity
  * 注入 <style>（塔罗金主题 / 项目色细条月历 / 星空毛玻璃）
  * + 月视图按时间排序（仅写 style.order，零 DOM 搬动）
  * + 浏览器标签页 favicon 替换（可自定义 FAVICON 常量）
@@ -15,7 +15,9 @@
 
   var CSS = `
 /* ============================================================
-   TAROT GOLD v1.8 — Super Productivity 主题
+   TAROT GOLD v1.9 — Super Productivity 主题
+   分层策略:手机(body.isTouchOnly)只吃零开销静态样式;
+   持续动画只在桌面网页(body:not(.isTouchOnly))出现。
    近黑紫底 / 发丝金线 / 星空毛玻璃 / 金箔流光 / 紧凑月历
    载体：SP 插件注入（plugin.js 内嵌本文件）
    建议：深色模式；Theme 下拉保持 Default/Dark（勿叠 Rainbow）
@@ -155,6 +157,9 @@ h3,
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
+  }
+  /* v1.9: 金箔流光动画只在桌面网页跑;手机上是静态金箔渐变(一次绘制,零耗电) */
+  body:not(.isTouchOnly) h1 {
     animation: tarotFoil 8s linear infinite;
   }
   @keyframes tarotFoil {
@@ -342,6 +347,92 @@ schedule-event.month-schedule-event .title .title-text {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   border-radius: 0 !important;
   rx: 0;
+}
+
+/* ============================================================
+   v1.9 美化包 —— 性能纪律照抄官方 rainbow 主题:
+   任务行是热路径 → 只用静态 border/box-shadow,零动画、零模糊;
+   持续动画全部锁在 body:not(.isTouchOnly)(桌面网页)。
+   ============================================================ */
+
+/* ---------- 9) 任务卡片:塔罗发丝金线 + 状态辉光(全平台,全静态) ---------- */
+body.isDarkTheme task .box {
+  border: 1px solid rgba(var(--tarot-gold-rgb), 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+body.isDarkTheme task:hover .box,
+body.isDarkTheme task .box:hover {
+  border-color: rgba(var(--tarot-gold-rgb), 0.45);
+  box-shadow: 0 0 10px rgba(var(--tarot-gold-rgb), 0.14);
+}
+body.isDarkTheme task.isSelected .box {
+  border-color: rgba(var(--tarot-gold-rgb), 0.55);
+  box-shadow: 0 0 12px rgba(var(--tarot-gold-rgb), 0.2);
+}
+/* 进行中任务:烛光描边(静态) */
+body.isDarkTheme task.isCurrent .box {
+  border-color: var(--tarot-gold);
+  box-shadow:
+    0 0 0 1px rgba(var(--tarot-gold-rgb), 0.35),
+    0 0 14px rgba(var(--tarot-gold-rgb), 0.28);
+}
+/* 已完成任务:sealed(封印)——降透明 + 虚线发丝框 */
+body.isDarkTheme task.isDone .box {
+  opacity: 0.55;
+  border-style: dashed;
+  border-color: rgba(var(--tarot-gold-rgb), 0.16);
+}
+
+/* ---------- 10) Finish Day:静态柔光(全平台) + 桌面呼吸(仅网页端) ---------- */
+.e2e-finish-day {
+  box-shadow:
+    0 0 14px rgba(var(--tarot-gold-rgb), 0.35),
+    0 0 34px rgba(var(--tarot-gold-rgb), 0.14) !important;
+  text-shadow: 0 0 10px rgba(22, 16, 6, 0.4);
+}
+@media (prefers-reduced-motion: no-preference) {
+  body:not(.isTouchOnly) .e2e-finish-day {
+    animation: tarotGlowBreathe 7s ease-in-out infinite;
+  }
+  @keyframes tarotGlowBreathe {
+    0%,
+    100% {
+      box-shadow:
+        0 0 12px rgba(var(--tarot-gold-rgb), 0.28),
+        0 0 30px rgba(var(--tarot-gold-rgb), 0.1);
+    }
+    50% {
+      box-shadow:
+        0 0 20px rgba(var(--tarot-gold-rgb), 0.48),
+        0 0 46px rgba(var(--tarot-gold-rgb), 0.2);
+    }
+  }
+}
+
+/* ---------- 11) 手机底栏:中央 + 按钮金辉(纯静态,零耗电) ---------- */
+.mobile-bottom-nav {
+  border-top: 1px solid rgba(var(--tarot-gold-rgb), 0.22);
+}
+.mobile-bottom-nav .add-task-button {
+  border: 1px solid var(--tarot-gold-line) !important;
+  box-shadow:
+    0 0 0 1px rgba(var(--tarot-gold-rgb), 0.35),
+    0 0 12px rgba(var(--tarot-gold-rgb), 0.4),
+    0 0 26px rgba(var(--tarot-gold-rgb), 0.18) !important;
+}
+
+/* ---------- 12) iOS 键盘修复(方案 A):第三方输入法虚报高度封顶 ----------
+   根因:SP 直接把 Capacitor keyboardWillShow 上报的高度写进
+   --keyboard-height,无钳制;讯飞等第三方输入法在 iOS 上会虚报,
+   输入条被顶到屏幕顶部。此处给偏移量封顶:最多抬到屏幕 45%。
+   嫌还是太高就把两处 45 改小(如 42)。苹果原生键盘不受影响
+   (其真实高度 ≈ 屏幕 40% 以内,够不到封顶线)。 */
+body.isTouchOnly add-task-bar.global {
+  bottom: min(calc(var(--keyboard-height, 0px) + var(--s2)), 45vh) !important;
+  bottom: min(calc(var(--keyboard-height, 0px) + var(--s2)), 45dvh) !important;
 }
 `;
 
